@@ -30,7 +30,7 @@ export default function SimpleCupLanding() {
         <Navigation />
 
         {/* Hero Section */}
-        <section id="hero" className="relative overflow-hidden pt-16">
+        <section id="hero" className="relative overflow-hidden pt-16 bg-white">
           <div className="container mx-auto px-4 py-16 sm:py-24 lg:py-32">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="text-center lg:text-left space-y-8">
@@ -38,9 +38,9 @@ export default function SimpleCupLanding() {
                   <Badge variant="secondary" className="bg-purple-100 text-purple-800">
                     Now Available on iOS
                   </Badge>
-                  <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white">Simple Cup</h1>
-                  <p className="text-xl sm:text-2xl text-purple-200 font-medium">Your Perfect Coffee, Every Time.</p>
-                  <p className="text-lg text-purple-100 max-w-lg mx-auto lg:mx-0">
+                  <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-black">Simple Cup</h1>
+                  <p className="text-xl sm:text-2xl text-gray-600 font-medium">Your Perfect Coffee, Every Time.</p>
+                  <p className="text-lg text-gray-600 max-w-lg mx-auto lg:mx-0">
                     Brew better coffee with just one screen. A minimalist coffee brewing assistant that combines
                     precision with simplicity.
                   </p>
@@ -54,7 +54,7 @@ export default function SimpleCupLanding() {
                   >
                     <Button
                       size="lg"
-                      className="bg-white hover:bg-gray-100 text-black rounded-xl px-8 py-4 text-lg font-semibold shadow-lg w-full sm:w-auto"
+                      className="bg-black hover:bg-gray-800 text-white rounded-xl px-8 py-4 text-lg font-semibold shadow-lg w-full sm:w-auto"
                     >
                       <Smartphone className="mr-2 h-5 w-5" />
                       Download on the App Store
@@ -64,7 +64,7 @@ export default function SimpleCupLanding() {
                     <Button
                       variant="outline"
                       size="lg"
-                      className="rounded-xl px-8 py-4 text-lg border-2 border-purple-300 text-purple-100 hover:bg-purple-800/50 bg-transparent w-full sm:w-auto"
+                      className="rounded-xl px-8 py-4 text-lg border-2 border-gray-800 text-gray-800 hover:bg-gray-200 bg-transparent w-full sm:w-auto"
                     >
                       View Privacy Policy
                     </Button>
@@ -74,11 +74,14 @@ export default function SimpleCupLanding() {
 
               <div className="flex justify-center lg:justify-end">
                 <div className="relative">
-                  <Image
-                    src="/simple-cup-mockup-transparent.png"
-                    alt="Simple Cup App Interface on iPhone"
-                    width={300}
-                    height={300}
+                  <video
+                    src="/Simple Cup 2.mp4"
+                    width="450"
+                    height="450"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
                   />
                 </div>
               </div>
