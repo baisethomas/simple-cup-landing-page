@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import {
   Coffee,
   Timer,
@@ -10,17 +10,16 @@ import {
   Smartphone,
   Star,
   Mail,
-  Instagram,
-  Twitter,
   ChevronRight,
   Play,
   Save,
   Settings,
-} from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
-import { ThemeProvider } from "@/components/theme-provider"
-import { Navigation } from "@/components/navigation"
+} from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { ThemeProvider } from "@/components/theme-provider";
+import { Navigation } from "@/components/navigation";
+import { FaInstagram, FaTiktok } from "react-icons/fa";
 
 export default function SimpleCupLanding() {
   return (
@@ -309,11 +308,11 @@ export default function SimpleCupLanding() {
               </div>
 
               <div className="flex items-center space-x-6 mb-6 md:mb-0">
-                <Link href="#" className="text-purple-300 hover:text-purple-200">
-                  <Instagram className="h-6 w-6" />
+                <Link href="https://www.instagram.com/simplecupapp/" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:text-purple-200">
+                  <FaInstagram className="h-6 w-6" />
                 </Link>
-                <Link href="#" className="text-purple-300 hover:text-purple-200">
-                  <Twitter className="h-6 w-6" />
+                <Link href="https://www.tiktok.com/@simple.cup" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:text-purple-200">
+                  <FaTiktok className="h-6 w-6" />
                 </Link>
               </div>
 
